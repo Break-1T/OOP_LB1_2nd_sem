@@ -34,7 +34,6 @@ namespace App3
                     int num = (int) i.DynamicInvoke();
                     Console.WriteLine($"{j}-е число равно {num}");
                     sum += num;
-                    Console.WriteLine(sum);
                     j++;
                 }
                 return sum/del.Length;
