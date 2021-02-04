@@ -31,8 +31,10 @@ namespace App3
                 int j = 1;
                 foreach (var i in del)
                 {
-                    Console.WriteLine($"{j}-е число равно {(int)i.DynamicInvoke()}");
-                    sum += (int)i.DynamicInvoke();
+                    int num = (int) i.DynamicInvoke();
+                    Console.WriteLine($"{j}-е число равно {num}");
+                    sum += num;
+                    Console.WriteLine(sum);
                     j++;
                 }
                 return sum/del.Length;
